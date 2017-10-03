@@ -1,0 +1,1447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:doc="http://xsltsl.org/xsl/documentation/1.0" xmlns:dt="http://xsltsl.org/date-time" xmlns:str="http://xsltsl.org/string" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <title>VIJAY KUMAR H K</title>
+    <style type="text/css" id="static">
+    /* Reset browser defaults *//* --------------------------------------------------------------
+    Reset default browser CSS.
+    Based on work by Eric Meyer:
+    * http://meyerweb.com/eric/tools/css/reset/index.html
+    -------------------------------------------------------------- *//* v1.0 | 20080212 */html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+    body {line-height: 1; background: #FFF; text-align: left; font-feature-settings: "liga" 0; -moz-font-feature-settings: "liga" off;}
+    ol, ul {list-style: none;}
+    blockquote, q {quotes: none;}
+    blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+    /* remember to define focus styles! */:focus {outline: 0;}
+    /* remember to highlight inserts somehow! */ins {text-decoration: none;}
+    del {text-decoration: line-through;}
+    /* tables still need 'cellspacing="0"' in the markup */table {border-collapse: collapse; border-spacing: 0;}
+    a img {border: none;}
+    /* Typography */
+    ul, li {list-style-type: disc; margin: 0 0 0 10px; padding: 0;}
+    ul li {margin: 0 0 0 13px;}
+    .clear {clear: both; height: 0;}
+    br.clear {line-height: 0;}
+    div.name {font-size: 15px; line-height: 17px; font-weight: bold; padding: 0; text-align: right; text-transform: uppercase; color: #369;}
+    div.logo {display: none;}
+    div.paragraph {position: relative;}
+    div.heading {clear: both; font-weight: bold; text-transform: lowercase; color: #369;}
+    div.address{position: relative; text-align: right; font-size: 0.917em; line-height: 1.25em; margin-top: 11px; color: #369;word-wrap: break-word; }
+    div.address2 {position: relative; text-align: left; font-size: 0.917em; line-height: 1.25em;}
+    span.jobtitle, span.companyname, span.degree, span.programline {font-weight: bold;}
+    span.degree, span.programline, span.jobtitle, span.jobdates {color: #003363;}
+    span.companyname {font-weight: normal!important;}
+    .datesWrapper {float: right;}
+    .table_wrapper {width: 100%; margin-top: 0;}
+    table.twocol td {width: 50%;}
+    table.skills, table.twocol {width: 100%;}
+    table.skills th, table.skills td {width: 20%; text-align: center;}
+    table.skills th {text-decoration: underline;}
+    table.skills .skillname, table.skills .skillrating {text-align: left; width: 35%;}
+    table.skills .skillrating {width: 20%;}
+    table.skills .skillyears, table.skills .skilllast {width: 19%;}
+    table.skills .pad1 {width: 5%;}
+    table.skills .pad2, table.skills .pad3 {width: 1%;}
+    span.paddedline {display: block;}
+    .nodisplay {display: none;}
+    div#document {color: #666;}
+    div#document p font {color: #666!important;}
+    div.SECTION_CNTC {padding-bottom: 6px;}
+    td.twocol_2 {border-left:1px  solid #FEFDFD;}
+    #document .bullet{font-size:1em;vertical-align:top;margin:0 3px;}
+    div.adnlLnks li{margin:0;}
+    div.adnlLnks{text-align: center}
+    .adnlLnks li {list-style-type: disc;display:inline!important;}
+    /*FIX for FORCEFULLY making left margin ZERO for CL*/
+    div#document .sectionCL .paragraph {margin-top: 0!important;}
+  </style>
+    <style type="text/css" id="unparsed">
+    div#document {line-height: {$FTLH}px;}
+    div#document table {line-height: {$FTLH}px;}
+    div#document.pagesize {width: {$DOCW}px;}
+    div#document.vmargins {padding-top: {$TBMR}px; padding-bottom: {$TBMR}px;}
+    div#document.hmargins {padding-left: {$LRMR}px; padding-right: {$LRMR}px;}
+    div#document .section {margin-top: {$SCSP}px;}
+    div#document div.firstsection {margin-top: 0;}
+    div#document div.SECTION_CNTC {margin-top: 0;}
+    div#document div.heading {margin-bottom: {$SHMB}px;}
+    div#document div.paragraph {margin-top: {$PSPC}px;}
+    div#document div.firstparagraph {margin-top: 0;}
+    div#document .singlecolumn, div#document .maincolumn {margin-left: {$PIND}px; width: {$MACW}px;}
+    .fontsize {font-size: {$FTSZ}px;}
+    .fontface {font-family: {$FTFC};}
+    div#document div.sectiontitle {font-size: {$HDSZ}px; line-height: {$HDLH}px;}
+    div.name {font-size: {$NMSZ}px; line-height: {$NMLH}px;}
+    div.address {font-size: {$CISZ}px; line-height: {$CILH}px; margin-top: {$CIMT}px;}
+    div#document table.skills td {padding-top: {$TDMT}px;}
+
+    /*FIX for Re-calculating width of singlecolumn for CL*/
+    div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+    div.address2 {font-size: {$FTSZ}px; line-height: {$FTLH}px;}
+  </style>
+    <style type="text/css" id="dynamic">
+    div#document {line-height: 18px;}
+    div#document table {line-height: 18px;}
+    div#document.pagesize {width: 528px;}
+    div#document.vmargins {padding-top: 25px; padding-bottom: 25px;}
+    div#document.hmargins {padding-left: 42px; padding-right: 42px;}
+    div#document .section {margin-top: 9px;}
+    div#document div.firstsection {margin-top: 0;}
+    div#document div.SECTION_CNTC {margin-top: 0;}
+    div#document div.heading {margin-bottom: 5px;}
+    div#document div.paragraph {margin-top: 11px;}
+    div#document div.firstparagraph {margin-top: 0;}
+    div#document .singlecolumn, div#document .maincolumn {margin-left: 0px; width: 528px;}
+    .fontsize {font-size: 11px;}
+    .fontface {font-family: Tahoma;}
+    div#document div.sectiontitle {font-size: 14px; line-height: 21px;}
+    div.name {font-size: 31px; line-height: 59px;}
+    div.address {font-size: 10px; line-height: 17px; margin-top: 9px;}
+    div#document table.skills td {padding-top: 5px;}
+
+    /*FIX for Re-calculating width of singlecolumn for CL*/
+    div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+    div.address2 {font-size: 11px; line-height: 18px;}
+  </style>
+  </head>
+  <body>
+    <div id="document" class="fontsize fontface vmargins hmargins linespacing pagesize">
+      <div id="SECTION_PICT963270805" class=" firstsection"></div>
+      <div id="SECTION_NAME963270806" class="section">
+        <div id="PARAGRAPH_963270806_1_635875097" class="paragraph PARAGRAPH_NAME firstparagraph">
+        <div class="name">
+          <span class="field" id="963270806FNAM1">VIJAY KUMAR</span><span></span> <span class="field" id="963270806LNAM1">H K</span>
+        </div>
+      </div>
+      </div>
+      <div id="SECTION_CNTC963270797" class="section SECTION_CNTC">
+        <div id="PARAGRAPH_963270797_1_635874152" class="paragraph PARAGRAPH_CNTC firstparagraph">
+        <div class="address">
+          <span class="field" id="963270797STRT1">F1 Sai Madhura Residency, 12th Main, 5th Phase, J.P.Nagar</span><span>,
+          </span><span class="spaced field" id="963270797CITY1">BANGALORE</span><span>,
+          </span><span class="spaced field" id="963270797STAT1">KARNATAKA</span><span>
+          </span><span class="spaced field" id="963270797ZIPC1">560078</span>
+          <span> | </span>
+          <span>(H) </span><span class="field" id="963270797HPHN1">+91-9740844344</span>
+          <span> | </span>
+          <span>(C) </span><span class="field" id="963270797CPHN1">+91-9740844344</span>
+          <span> | </span>
+          <span dependency="EMAI" class="field" id="963270797EMAI1">vijay007hk@gmail.com</span>
+
+            
+                    
+                    
+                    
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_SUMM963270800" class="section">
+        <div class="heading">
+        <div id="SECTNAME_SUMM963270800" class="sectiontitle">Summary</div>
+      </div>
+        <div id="PARAGRAPH_963270800_1_635874169" class="paragraph firstparagraph">
+        <div class="field singlecolumn" id="963270800FRFM1"><ul><li>Seeking an exciting Senior Quality Engineer (<strong><em>Manual/Automation</em></strong>) position with a top-notch
+technology driven company that will allow me to learn new skills, enhance and implement my existing skills for
+being a zealous engineer. I am a quick learner and eager to contribute with my creativity
+and hard work towards the goals & in turn the success of the company. </li><li>Having <strong><em>9 + Yrs</em></strong>  of testing-specific experience in Writing Automated Test cases .
+Performing Functional Testing, Smoke Testing, Integration Testing, Regression
+Testing and System Testing.
+</li><li>Has previously worked on traditional V-Model oriented projects. Worked on <em><strong>AGILE  </strong></em>projects (Starting Aug-2013 to Present)
+Involved in various phases of Software Test Life Cycle.
+</li><li>Extensive experience in preparing Test Scenarios and Documentation of Manual & Automation
+Test Cases.</li><li>
+Worked with IBM rational tools like Clear Quest, Clear Case.
+Worked for <em><strong>3+ yrs</strong></em>  with <em><strong>IBM Rational Functional Tester</strong></em>  for Automation testing using <strong><em>Hybrid</em></strong> framework & <strong><em>JAVA</em></strong>.
+</li><li>Has around <strong><em>6+ yrs</em></strong>. of hands-on <strong><em>Automation </em></strong> testing experience.
+</li><li>Worked <em><strong>1 yr</strong></em>  on <em><strong>WebServices RESTful </strong></em>using <em><strong>SOAPUI </strong></em>and <strong><em>Groovy </em></strong>scripting.
+</li><li>Worked on WebServices Testing  using <em><strong>PERL </strong></em>script[ Has <em><strong>2 Yrs</strong></em>  experience in
+WebServices Testing ].</li><li> Good experience in Defect Tracking System using IBM's Clear Quest,HP's Quality Center
+8.2,Microsoft's Team Foundation Server & Share Point.</li><li>
+Excellent communication and interpersonal skills, Consistently being recognized by management and peers for producing high quality
+deliverables.
+Ability to work independently as well as in a team environment.</li><li>Worked on <strong><em>Selenium Webdriver</em></strong>, Maven, TestNG, Git, GitHub for <strong>1+</strong> <strong>years</strong>.</li><li><em><strong></strong></em>Worked on <em><strong>CodedUI Automation</strong></em>  using Visual studio and<strong><em> C#</em></strong>  for <strong>1</strong> <strong>year</strong>.<br></li><li>Has <strong><em>B-1 VISA</em></strong> and have traveled to <strong>U.S.A</strong> twice - 2012 & 2015</li><li>Able to<strong><em> quickly learn & implement</em></strong> any new tool, technology and Progrmming/Scripting language</li></ul></div>
+      </div>
+      </div>
+      <div id="SECTION_HILT963270802" class="section">
+        <div class="heading">
+        <div id="SECTNAME_HILT963270802" class="sectiontitle">Skills</div>
+      </div>
+        <div id="PARAGRAPH_963270802_1_635874171" class="paragraph firstparagraph">
+        <div class="singlecolumn maincolumn">
+          <table class="twocol">
+            <tr>
+              <td class="field twocol_1" id="963270802SKC11"><ul><li>Testing Tools SOAPUI</li><li>IBM Rational Functional Tester 8.1</li><li>Operating System Windows 7, Windows XP, Linux, Unix</li><li>Languages C, Core Java, C#</li><li>Scripting Perl, Groovy script, JavaScript</li><li>R.D.B.M.S MS SQLServer 2008,Oracle 10i</li></ul></td>
+              <td class="field twocol_2" id="963270802SKC21"><ul><li>Coded UI Automation - VSTS 2010 </li><li>Clear Quest</li></ul><ul><li>Team FoundationServer</li><li>Mercury Quality Centre 8.2</li><li>Eclipse IDE<br></li><li>Rational Requisite Pro</li><li>Excellent problem-solving abilities<br></li></ul></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+      <div id="SECTION_EXPR963270798" class="section">
+        <div class="heading">
+        <div id="SECTNAME_EXPR963270798" class="sectiontitle">Work History</div>
+      </div>
+        <div id="PARAGRAPH_963270798_1_635874154" class="paragraph firstparagraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT1">Senior Quality Engineer</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP1">Fidelity National Financial India</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT1">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA1">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES1"><ul><li><em><strong>Fidelity National Financial India</strong></em> - Oct 2010 to Jun 2017
+</li><li><strong><em>Accenture Services Pvt.Ltd </em></strong>, worked as Software Engineer in  Bangalore from Aug 2007 - Sep
+2010.</li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_2_635957291" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT2">Stewart Jackets</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP2">Fidelity National Finance India</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT2">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA2">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES2"><p><strong>Project
+#1</strong></p><p>Title:
+Stewart Jackets</p><p>Client:
+Fidelity National Financial</p><p>Role:Sr. Quality Engineer
+</p><p>Team
+strength: 2</p><p>Methodology:
+Agile</p><p>Tools : Visual Studio 2010 Ultimate, TFS</p><p><br></p><p>
+
+
+
+
+<strong>Description</strong>:</p><p>Stewart Jackets is an integration of Stewart Title underwriting services  with the SoftPro-360 windows product used by Fidelity National Financial to provide Title and Closing services. SoftPro360 makes RPC calls to Stewart to fetch various data as required during the issuance of a Policy Jacket.</p><p><tbd></tbd></p><p>Policy Jacket has different states - Completed, Rejected, Cancelled, InProgress, Ready.</p><p>​</p><p><em><strong>Roles
+& Responsibilities</strong></em>:</p><ul><li>Attend Sprint planning meeting</li><li> Understand
+requirements, flow and functionality of the application.</li><li>Add UIMaps for different screens and wrote Business logic for the screens</li><li> Preparing
+test scripts using CodedUI C# and test data.
+</li><li> Execution
+of test scripts in different test environments - Windows 7 and 8</li><li> Involved
+in code reviews to analyse the test scripts.
+</li><li> Interaction
+with client team to resolve the functional, data and testing queries.
+</li><li>Smoke, Functional, Integration, Regression and System testing.
+</li><li>  Identify
+the possible positive and negative cases for the Test scenario
+created and making sure the Test Script is concise, understandable
+and executable.</li><li> Executed
+Test scripts and reported defects in terms of Major, Minor &
+Critical.  Reproducing
+all defects found and provide detail documentation (e.g. screen
+prints, step-by-step reproduction instructions)<br></li><li>Tracking
+bugs and logging them in Team Foundation Server.</li><li> Establish
+onshore calls on  daily basis [Daily Standups] to improve the quality of the
+project in various aspects.</li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_3_635874153" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT3">Rate Services</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP3">Fidelity National Financial</span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT3"></span>
+              <span class="joblocation jobstate" id="963270798JSTA3"></span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES3"><div><strong>Project
+# 2</strong></div><div>
+Title:
+Rate Services 
+
+Client:
+</div><div>Fidelity National Financial
+</div><div>Role:
+Sr.Quality Engineer
+</div><div>Team
+Strength: 4 [WebServices Testing]</div><div>
+Methodology:
+V- Model</div><div>Tools
+used: PERL,Visual Studio 2013, MTM, TFS (Team Foundation Server)</div><p>​</p><div>
+
+
+<em><strong>Description:</strong></em>
+</div><div>This
+project allow lenders and 3rd parties to connect to the NRC service,
+so they can integrate their current systems, without the need for
+using a standalone Rate Calculator application to complete a policy
+quote. To accomplish this, the prototype was implemented using
+Windows Communication Foundation (WCF) REST API, which transmits JSON
+or XML messages.
+</div><div> </div><div>
+
+<em><strong>Roles
+& Responsibilities</strong></em>:
+</div><ul><li>
+
+
+	Understand
+	requirements, flow and functionality of the application.</li><li>
+	Preparing
+	Services Automation test scripts and test data for REST
+	protocol
+	Execution
+	of test cases in QA environment.
+</li><li>	Wrote
+	reusable PERL
+	script for data driven framework.
+</li><li>	Interaction
+	with client team to resolve the testing queries.
+</li><li>	Executed
+	Test Cases and reported defects in terms of Major, Minor &
+	Critical.
+	Reproducing
+	all defects found and provide detail documentation (e.g. screen
+	prints, step-by-step reproduction instructions)
+</li><li>	Tracking
+	bugs and logging them in Microsoft TFS [Team Foundation Server].</li></ul><p>​</p><div>
+
+
+
+<em><strong>Testing
+- Planning and Execution</strong></em>:
+</div><ul><li>
+
+
+	Prepare
+	test environment with the help of IT Support team.
+</li><li>	Manage
+	Defect cycle using bug-tracking tool.
+</li></ul><div> </div><div>
+
+
+<em><strong>Process
+Improvements:</strong></em></div><ul><li>
+
+
+	Wrote
+	reusable functions in PERL  as and when the situation demanded.
+<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_4_635874155" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT4">Jacket Trax</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP4">Fidelity National Finance India</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT4">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA4">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES4"><div><strong>Project
+# 3</strong></div><div> Title:
+Jacket Trax 
+
+Client:
+</div><div>Fidelity National Financial
+</div><div>Role:
+Sr.Quality Engineer</div><div>
+Team
+Strength: 2 [WebServices Testing]
+</div><div>Methodology:
+Agile
+</div><div>Tools
+used: SOAPUI, TFS (Team Foundation Server)
+</div><div> </div><div>
+
+<strong>Description:</strong>
+</div><div>The
+JacketTrax Web API will provide Fidelity National Title Group agents
+the ability to issue jackets from their T & E software.   It will
+allow a user to send order information directly to agentTRAX,
+eliminating the need to retype this information.
+Calls
+to the service build upon each other. Output from one call, will
+often be used as input to a subsequent service call. </div><div>
+
+
+
+The
+service supports REST (Representational State Transfer) over SSL for
+communications between client and server.  Both XML and JSON formats
+are currently supported. Future versions of the service are likely to
+only support the JSON format.</div><div> </div><div>
+
+
+<em><strong>Roles
+& Responsibilities</strong></em>:
+</div><ul><li>
+
+
+	Understand
+	requirements, flow and functionality of the application.</li><li>
+	Preparing
+	Services Automation test scripts and test data for REST
+	protocol
+	Execution
+	of test cases in QA environment.
+</li><li>	Wrote
+	reusable Groovy script for data driven framework.
+</li><li>	Wrote
+	Groovy script for HTML report generation.
+</li><li>	Attending
+	Sprint
+	Planning
+	/ Poker
+	Planning
+	sessions at the beginning of every sprint.
+</li><li>	Attending
+	Daily
+	Stand Up
+	meetings.
+</li><li>	Attending
+	Sprint
+	Retrospective
+	meetings at the end of every sprint.
+</li><li>	Interaction
+	with client team to resolve the testing queries.</li><li>
+	Executed
+	Test Cases and reported defects in terms of Major, Minor &
+	Critical.
+	Reproducing
+	all defects found and provide detail documentation (e.g. screen
+	prints, step-by-step reproduction instructions)</li><li>
+	Tracking
+	bugs and logging them in Microsoft TFS [Team Foundation Server].</li></ul><div> </div><div>
+
+
+
+<em><strong>Testing
+- Planning and Execution</strong></em>:
+</div><ul><li>
+
+
+	Prepare
+	test environment with the help of IT Support team.
+	Manage
+	Defect cycle using bug-tracking tool.
+</li></ul><div> </div><div>
+
+
+<em><strong>Process
+Improvements</strong></em>:
+</div><ul><li>
+
+
+	Wrote
+	reusable functions in Groovy  as and when the situation demanded.
+<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_5_635874157" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT5">Next Ace</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP5">Fidelity National Financial India</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT5">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA5">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES5"><div><strong>Project #4</strong></div><div><strong></strong>
+
+Title: NextAce</div><div>
+
+Fidelity National
+Financial</div><div>
+
+Role:Sr.Quality
+Engineer</div><div>
+
+Team Strength: 2
+[Automation Testing]</div><div>
+
+Methodology: V - Model
+</div><div>
+Tools used: Rational
+Functional Tester[RFT], TFS (Team Foundation Server)
+
+ </div><div> </div><div>
+
+<strong>Description</strong>:
+</div><div>
+NextAce is a premium
+Title Order search and processing App . This portal is designed to help
+customers gain streamlined access to Order information across Fidelity's
+nationwide network of local resources.
+</div><div> </div><div><em><strong>Roles &
+Responsibilities:
+</strong></em></div><ul><li>Understand
+requirements, flow and functionality of the application.</li><li>Preparing Automation
+test scripts and test data. </li><li>Learning web objects
+using RFT's Test Object Inspector & developer tool DOM Execution of test
+cases in QA environment.</li><li>Updating Web objects
+and Test data as per changes in the application. Interaction with client team
+to resolve the testing queries.</li><li>Executed Test Cases
+and reported defects in terms of Major, Minor & Critical. Reproducing all
+defects found and provide detail documentation (e.g. screen prints,
+step-by-step reproduction instructions)
+
+·</li><li>Tracking bugs and
+logging them in Microsoft TFS [Team Foundation Server].  </li></ul><div> </div><div><em><strong>Testing - Planning and
+Execution: </strong></em></div><ul><li>Prepare test
+environment with the help of IT Support team. Manage Defect cycle using
+bug-tracking tool.
+
+ 
+</li></ul><div>
+<em><strong>Process Improvements:</strong></em></div><ul><li>Wrote reusable
+functions in Java as and when the situation demanded. <br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_6_655751779" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT6">NextAce [Selenium]</span><span></span>
+            <span class="datesWrapper">
+              <span class="jobdates" format="%b %Y" id="963270798JSTD6">Jan 2015</span><span> - </span>
+              <span class="jobdates" format="%b %Y" id="963270798EDDT6">Nov 2015</span>
+            </span>
+          </span><br>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP6">Fidelity National Financial</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT6">BANGALORE</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA6">KARNATAKA</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES6"><p><strong>Project #4.1</strong></p><p>Title: NextAce</p><p>Fidelity National Financial</p><p>Role:Sr.Quality Engineer</p><p>Team Strength: 2 [Automation Testing] - Migration from Rational Tools to SELENIUM</p><p>Methodology: V - Model</p><p>Tools used: Selenium-WebDriver, TestNG, Maven, Git, GitHub </p><p><br></p><p><strong><em>Description</em></strong>:</p><p>NextAce is a premium Title Order search and processing App . This portal is designed to help customers gain streamlined access to Order information across Fidelity's nationwide network of local resources. </p><p><br></p><p><strong><em>Roles & Responsibilities</em></strong>:   </p><ul><li> Understand requirements, flow and functionality of the application.</li><li>Preparing Automation test scripts and test data.</li><li>Learning web objects using Selenium  & developer tool DOM </li><li>Execution of test cases in QA environment.</li><li>Updating Web objects and Test data as per changes in the application. Interaction with client team to resolve the testing queries.</li><li>Executed Test Cases and reported defects in terms of Major, Minor & Critical. Reproducing all defects found and provide detail documentation (e.g. screen prints, step-by-step reproduction instructions) · </li><li>Tracking bugs and logging them in Microsoft TFS [Team Foundation Server]. </li></ul><p><br></p><p><strong><em>Testing - Planning and Execution</em></strong>:</p><ul><li>Prepare test environment with the help of IT Support team. Manage Defect cycle using bug-tracking tool. </li></ul><p>​</p><p><strong><em>Process Improvements</em></strong>: </p><ul><li>Wrote reusable functions in Java as and when the situation demanded.</li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_7_655757836" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT7">AgentTrax [Selenium]</span><span></span>
+            <span class="datesWrapper">
+              <span class="jobdates" format="%b %Y" id="963270798JSTD7">Dec 2015</span><span> - </span>
+              <span class="jobdates" format="%b %Y" id="963270798EDDT7">Jun 2016</span>
+            </span>
+          </span><br>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP7">Fidelity National Financial</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT7">Bangalore</span>
+              <span class="joblocation jobstate" id="963270798JSTA7"></span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES7"><p><strong>Project # 4.2</strong></p><p>Title: agentTRAX (Title Insurance Agency Solutions)</p><p>Client: Fidelity National Financial</p><p>Role: Senior Test Engineer</p><p>Team Strength:4</p><p>Methodology: V-Model</p><p>Tools used: Selenium-WebDriver, Maven, TestNG, Git, GitHub,MS SQLServer 2008 </p><p><br></p><p><strong><em>Description</em></strong>:  Migration from Rational tools to SELENIUM</p> <p><strong><em>Roles & Responsibilities</em> :  </strong></p><ul><li><strong></strong>Understand requirements, flow and functionality of the application.</li><li>Preparing test cases and test data. Execution of test cases in Test & Production environments. </li><li>Involved in peer reviews to analyse the test cases. Interaction with client team to resolve the functional, data and testing queries. </li><li>Smoke, Functional, Integration, Regression and System testing. </li><li>Identify the possible positive and negative cases for the Test scenario created and making sure the Test Script is concise, understandable and executable.</li><li> Executed Test Cases and reported defects in terms of Major, Minor & Critical. Making sure the Test scripts are executed based on the Cycle plan without any slippage.</li><li>Reproducing all defects found and provide detail documentation (e.g. screen prints, step-by-step reproduction instructions) </li><li>Tracking bugs and logging them in Clear Quest.</li></ul><p><br></p><p>  <strong><em>Testing - Planning and Execution</em></strong>: </p><ul><li>Prepare detailed test suites for Integration, System, Regression testing and execute the test cases. </li><li>Manage Defect cycle using bug-tracking tool.</li><li>Updating the testing progress to the project group and preparation of test summary reports. <br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_8_635874158" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT8">Customer Web Portal</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP8">Fidelity National Financial</span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT8"></span>
+              <span class="joblocation jobstate" id="963270798JSTA8"></span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES8"><div><strong>Project
+# 5</strong></div><div> Title:
+Customer Web Portal [Formerly known as Lender Website]
+</div><div>Client:
+Fidelity National Financial
+</div><div>Role:
+Sr.Quality Analyst
+</div><div>Team
+Strength: 4
+</div><div>Methodology:
+Agile
+</div><div>Tools
+used: Rational Functional Tester[RFT], TFS (Team Foundation Server)</div><div> </div><div>
+
+
+<strong>Description</strong>:
+Customer
+Web Portal is a premium Title
+and Settlement
+services partner. This portal is designed to help customers gain
+streamlined access to transaction information across Fidelity's
+nationwide network of local resources - all day, every day.
+</div><div> </div><div>
+
+<strong><em>Roles
+& Responsibilities</em></strong>:
+</div><ul><li>
+
+
+	Understand
+	requirements, flow and functionality of the application.
+</li><li>	Preparing
+	Automation test scripts and test data.
+</li><li>	Learning
+	web objects using RFT's Test
+	Object
+	Inspector
+	& developer tool DOM
+	Execution
+	of test cases in QA environment.
+</li><li>	Updating
+	Web objects and Test data as per changes in the application.
+	Attending
+	Sprint
+	Planning
+	/ Poker
+	Planning
+	sessions at the beginning of every sprint.
+</li><li>	Attending
+	Daily
+	Stand Up
+	meetings.</li><li>
+	Attending
+	Sprint
+	Retrospective
+	meetings at the end of every sprint.
+</li><li>	Interaction
+	with client team to resolve the testing queries.
+</li><li>	Executed
+	Test Cases and reported defects in terms of Major, Minor &
+	Critical.
+	Reproducing
+	all defects found and provide detail documentation (e.g. screen
+	prints, step-by-step reproduction instructions)
+</li><li>	Tracking
+	bugs and logging them in Microsoft TFS [Team Foundation Server].</li></ul><div> </div><div>
+
+
+
+<em><strong>Testing
+- Planning and Execution</strong></em>:
+</div><ul><li>
+
+
+	Prepare
+	test environment with the help of IT Support team.
+	Manage
+	Defect cycle using bug-tracking tool.</li><li>
+	Participation
+	in Sprint various Sprint ceremonies.</li></ul><div>
+
+
+<em><strong>Process
+Improvements:</strong></em>
+</div><ul><li>
+
+
+	Wrote
+	reusable functions in Java as and when the situation demanded.
+<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_9_635874160" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT9">SoftPro Select</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP9">Fidelity National Financial India</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT9">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA9">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES9"><div><strong>Project
+#6</strong></div><div>Title:
+SoftPro Select
+</div><div>Client:
+Fidelity National Financial
+</div><div>Role:
+Sr.Quality Analyst
+</div><div>Team
+Strength: 2</div><div>
+Methodology:
+Agile
+</div><div>Tools
+used: MS SQLServer, TFS (Team Foundation Server)
+</div><div> </div><div>
+
+<strong>Description</strong>:
+</div><div>Built
+on the Microsoft® .NET platform, SoftPro Select is the
+next-generation real estate closing, title and escrow product suite.
+</div><div><u>PROFORM:
+CLOSING AND TITLE INSURANCE FORMS</u></div><div>
+
+
+
+ProForm,
+SoftPro's flagship application for the Closing, Title and Escrow
+profession, is a completely automated program for every phase of the
+closing, title and escrow process. Completely managing the entire
+process from order entry through final title policy, it is the most
+comprehensive, customizable solution on the market. Created with the
+most robust library of closing and title documents in the industry,
+Select's ProForm is simple to learn, use and conform to your
+business operation.
+</div><div>
+
+<u>PROTRUST:
+TRUST ACCOUNT MANAGEMENT</u></div><div>
+
+
+ProTrust
+is SoftPro's dependable and secure trust account management and
+reconciliation tool that seamlessly integrates with ProForm. Quickly
+and easily add trust account management and reconciliation capability
+to your office with ProTrust. When combined with ProForm, you can
+transfer funds and disbursements directly from closing to ProTrust.
+Maintain all transactions including receipts and disbursements that
+are active, voided, pending or held. You can also quickly search for
+specific ledgers and/or transactions. ProTrust provides a variety of
+reports to assist in reconciliation and auditing procedures.
+</div><div>
+
+<u>PROADMIN:
+PROFILE CREATION AND MANAGEMENT
+</u></div><div><u></u>Used
+to create user profiles, trust accounts.
+</div><div> </div><div>
+
+<em><strong>Roles
+& Responsibilities:</strong></em></div><ul><li>
+
+
+	Understand
+	requirements, flow and functionality of the application.
+</li><li>	Preparing
+	test cases and test data.</li><li>
+	Execution
+	of test cases in Test environments.
+</li><li>	Interaction
+	with client team to resolve the testing queries.
+</li><li>	Perform
+	Installation and UnInstallation  testing on different
+	OperatingSystems & MSSQL server combinations.
+</li><li>	Perform
+	Single Tier & Mid-Tier testing
+	Carried
+	out Build Verification tests on different builds.
+</li><li>	Carried
+	out CONTROLS testing.
+</li><li>	Executed
+	Test Cases and reported defects in terms of Major, Minor &
+	Critical.
+	Reproducing
+	all defects found and provide detail documentation (e.g. screen
+	prints, step-by-step reproduction instructions)
+</li><li>	Tracking
+	bugs and logging them in Microsoft TFS [Team Foundation Server].</li></ul><div> </div><div>
+
+
+
+<em><strong>Testing
+- Planning and Execution</strong></em>:
+</div><ul><li>
+
+
+	Prepare
+	test environment with the help of IT Support team.
+</li><li> Manage Defect cycle using bug-tracking tool.</li><li>	Participated
+	in Sprint Planning sessions.
+</li></ul><div> </div><div>
+
+
+<em><strong>Process
+Improvements</strong></em>:
+</div><ul><li>
+
+
+	Automated
+	the Installation and UnInstallation process using open source tool
+	AutoIT.
+<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_10_635874161" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT10"> Leveraged Solutions – IBM Cognos Reporting</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP10">Fidelity National Financial India</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT10">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA10">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES10"><div><strong>Project
+#7</strong></div><div>Title:
+Leveraged Solutions – IBM Cognos Reporting (DatawareHouse
+Project)
+Client:
+Fidelity National Financial</div><div>
+Role:
+Test Engineer
+</div><div>Team
+Strength: 2
+</div><div>Methodology:
+V-Model
+</div><div>Tools
+used: MS SQLServer 2008, RFT, Clear Quest, Share Point
+</div><div> </div><div>
+
+<strong>Description</strong>:
+</div><div>This
+project is a migration from Document
+Direct
+to IBM
+Cognos Reporting.
+Document
+Direct
+is a program that allows selected users like managers, bookkeepers,
+and other decision makers to simultaneously view financial statements
+and documents that pertain to each user's operation. Each user is
+assigned an exclusive login ID and password and can view only
+financial statements for which the user is responsible.
+
+
+
+
+During
+each month-end financial close, preliminary income statement trends
+and general ledger detail reports are placed on Document Direct
+beginning with the third business day of every month. These
+preliminary reports are placed on Document Direct one time each day
+for every day of the close. Once the preliminary reports are
+complete, managers have 24 hours to review, correct, and adjust these
+reports. After the 24-hour review period has ended, operations are
+final. At that point, the final income statement trends and general
+ledger reports are placed on Document Direct. In the days following,
+additional final reports such as balance sheet trends, budget
+comparisons, and departmental income statements are placed on
+Document Direct. Users are informed of what reports are available as
+well as the status of the 24-hour review period by a screen visible
+when they first select Document Direct from the FNF homepage menu.
+</div><div> </div><div>
+
+<em><strong>Roles
+& Responsibilities</strong></em>:
+</div><ul><li>
+
+
+	Understand
+	requirements, flow and functionality of the application.
+</li><li>	Preparing
+	test cases and test data.
+</li><li>	Execution
+	of test cases in Test & Production environments.
+</li><li>	Involved
+	in peer reviews to analyse the test cases.
+</li><li>	Interaction
+	with client team to resolve the functional, data and testing
+	queries.
+</li><li>	Smoke,
+	Functional, Integration, Regression and System testing.
+</li><li>	Involved
+	in functional study of application
+	Participating
+	in Technical Meetings and Workgroup Meetings to understand the
+	business.
+</li><li>	Identify
+	the possible positive and negative cases for the Test scenario
+	created and making sure the Test Script is concise, understandable
+	and executable.
+	Involved
+	in developing a full suite of test cases to test the product's
+	stability.
+	Executed
+	Test Cases and reported defects in terms of Major, Minor &
+	Critical.
+	Making
+	sure the Test scripts are executed based on the Cycle plan without
+	any slippage.
+</li><li>	Reproducing
+	all defects found and provide detail documentation (e.g. screen
+	prints, step-by-step reproduction instructions)
+</li><li>	Tracking
+	bugs and logging them in Clear Quest.
+</li></ul><div> </div><div>
+
+
+<em><strong>Testing
+- Planning and Execution:
+</strong></em></div><ul><li><em><strong></strong></em>
+
+
+	Prepare
+	detailed test suites for Integration, System, Regression testing and
+	execute the test cases.
+</li><li>	Manage
+	Defect cycle using bug-tracking tool.
+</li><li>	Updating
+	the testing progress to the project group and preparation of test
+	summary reports.
+</li></ul><div> </div><div>
+
+
+<em><strong>Process
+Improvements</strong></em>:
+</div><ul><li>
+
+
+	Automated
+	the Regression Suite using IBM's Rational
+	Functional
+	Tester.
+</li><li>	Wrote
+	P.E.R.L scripts for comparison of two reports.
+</li><li>	Wrote
+	SQL queries to compare HTML report data with the Database.
+<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_11_635874162" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT11">TRAX (Title Insurance Agency Solutions)</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP11">Fidelity National Financial</span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT11"></span>
+              <span class="joblocation jobstate" id="963270798JSTA11"></span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES11"><div><strong>Project
+#8</strong></div><div> Title:
+TRAX (Title Insurance Agency Solutions)
+</div><div>Client:
+Fidelity National Financial
+</div><div>Role:
+Test Engineer
+</div><div>Team
+Strength: 7
+</div><div>Methodology:
+V-Model
+</div><div>Tools
+used: Oracle 10i, RFT, Clear Quest, Share Point
+</div><div> </div><div>
+
+<strong>Description:</strong></div><div>
+
+
+
+The
+TRAX system is used by employees of Fidelity and Lender Processing
+Services.  The system is not used by external customers.  TRAX stores
+information pertaining to the operations and accounting sides of the
+title insurance business.
+</div><div>TRAX
+is a replacement for NAS system.
+The NAS system was used by Fidelity title employees to manage
+information relating to customers, inventory and accounting
+transactions.
+</div><div> </div><div>
+<u>Key
+Features:</u></div><ul><li>     
+
+
+	
+	Customers
+	will be created and edited in TRAX.  Customer types will include
+	Agency, Lender, Vendor and Direct.TRAX will provide the capability
+	for a user to search and retrieve customer information.
+</li><li>	
+	Information
+	pertaining to previous/old agents can be searched and retrieved in
+	TRAX.
+</li><li>	
+	The
+	system will provide the option to create and maintain (edit) new
+	Agencies.
+	
+	Detailed
+	information associated to each Agency customer will include customer
+	number, customer type, customer subtype, Tax ID type and number,
+	Account Rep, ABA Type, Is Virtual, Status, start history, Business
+	Name, Doing Business As (DBA), Fiscal Year End, customer contracts,
+	licenses, locations, accounting details, affiliations and agentIDs
+	(an association for each customer, location, underwriter and
+	property state combination).</li><li>
+	Forms
+	– Trax users can create a form which has a system generated form
+	code. These form codes are used during the creation of a new policy.
+</li><li>	Orders
+	– Once forms are created orders are placed for those form codes
+	for print shop so that the forms can be printed
+</li><li>	Inventory
+	– Inventory will have the list of all REPORTED policies.</li><li>Policy
+	– A policy can have different statuses – OUTSTANDING-NULL,
+	OUTSTANDING-UBE, VOID, REPORTED.
+</li></ul><div> </div><div>
+
+
+
+
+  
+
+<em><strong>Roles
+& Responsibilities</strong></em>:
+</div><ul><li>
+
+
+	Understand
+	requirements, flow and functionality of the application.
+</li><li>	Preparing
+	test cases and test data.
+</li><li>	Execution
+	of test cases in Test & Production environments.
+</li><li>	Involved
+	in peer reviews to analyse the test cases.</li><li>
+	Interaction
+	with client team to resolve the functional, data and testing
+	queries.
+</li><li>	Smoke,
+	Functional, Integration, Regression and System testing.
+</li><li>	Identify
+	the possible positive and negative cases for the Test scenario
+	created and making sure the Test Script is concise, understandable
+	and executable.
+	Executed
+	Test Cases and reported defects in terms of Major, Minor &
+	Critical.
+	Making
+	sure the Test scripts are executed based on the Cycle plan without
+	any slippage.
+</li><li>	Reproducing
+	all defects found and provide detail documentation (e.g. screen
+	prints, step-by-step reproduction instructions)
+</li><li>	Tracking
+	bugs and logging them in Clear Quest.
+</li></ul><div> </div><div>
+
+
+<em><strong>Testing
+- Planning and Execution</strong></em>:
+</div><ul><li>
+
+
+	Prepare
+	detailed test suites for Integration, System, Regression testing and
+	execute the test cases.
+</li><li>	Manage
+	Defect cycle using bug-tracking tool.
+</li><li>	Updating
+	the testing progress to the project group and preparation of test
+	summary reports.
+<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_12_635874164" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT12">Agent Trax</span><span></span>
+            
+          </span>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP12">Fidelity National Financial</span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT12"></span>
+              <span class="joblocation jobstate" id="963270798JSTA12"></span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES12"><div><strong>Project
+#9</strong></div><div><strong></strong>Title:
+agentTRAX (Title Insurance Agency Solutions)
+</div><div>Client:
+Fidelity National Financial
+</div><div>Role:
+Test Engineer
+</div><div>Team
+Strength: 7</div><div>
+Methodology:
+V-Model
+</div><div>Tools
+used: MS SQLServer 2008, RFT, Clear Quest, Share Point</div><div> </div><div>
+
+
+<strong>Description</strong>:
+</div><div>
+
+
+AgentTRAX
+is a web application developed exclusively for the use of title
+insurance agents. It has 3 major modules – Closing
+Protection
+Letter,
+jacketTRAX, Manage Trax.</div><div>
+
+
+
+Closing
+Protection Letter –
+Agency user can generate & issue (print or e-mail) a closing
+protection letter to the policy holder.
+</div><div>
+
+
+JacketTRAX
+– The jacketTRAX portion of agentTRAX is an existing online
+application in agentTRAX that allows Title Agents the ability to
+create policy jackets related to title insurance. Currently the
+application captures a minimum amount of information for the user to
+generate a policy number and print a policy jacket. The title agent
+is then responsible for reporting their policies and premiums to FNTG
+Agency Accounting department. Because of the lag of policies reported
+by the agent, there is a need for auto reporting of policies.
+</div><div>
+This
+project will be to enhance the current functionality of creating a
+policy jacket available in jacketTRAX with the sharing of a
+production database with TRAX, integration with the Rate Calculation
+Engine and to capture the data needed to allow auto reporting of
+jackets to TRAX in a timely manner
+
+
+
+Manage
+Trax – This
+section of the App is used to add new agents or delete existing
+agents to/from the agency accounting user's portfolio.</div><div> </div><div>
+
+
+
+
+
+
+
+
+<em><strong>Roles
+& Responsibilities</strong></em>:</div><ul><li>
+
+
+
+	Understand
+	requirements, flow and functionality of the application.
+</li><li>	Preparing
+	test cases and test data.
+	Execution
+	of test cases in Test & Production environments.
+</li><li>	Involved
+	in peer reviews to analyse the test cases.
+	Interaction
+	with client team to resolve the functional, data and testing
+	queries.
+</li><li>	Smoke,
+	Functional, Integration, Regression and System testing.</li><li>
+	Identify
+	the possible positive and negative cases for the Test scenario
+	created and making sure the Test Script is concise, understandable
+	and executable.
+	Executed
+	Test Cases and reported defects in terms of Major, Minor &
+	Critical.
+	Making
+	sure the Test scripts are executed based on the Cycle plan without
+	any slippage.
+</li><li>	Reproducing
+	all defects found and provide detail documentation (e.g. screen
+	prints, step-by-step reproduction instructions)
+</li><li>	Tracking
+	bugs and logging them in Clear Quest.
+</li></ul><div> </div><div>
+
+
+<em><strong>Testing
+- Planning and Execution:</strong></em></div><ul><li>
+
+
+	Prepare
+	detailed test suites for Integration, System, Regression testing and
+	execute the test cases.
+</li><li>	Manage
+	Defect cycle using bug-tracking tool.
+</li><li>	Updating
+	the testing progress to the project group and preparation of test
+	summary reports.
+<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_13_635874165" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT13">Underwriting Decision Process (UDP)</span><span></span>
+            <span class="datesWrapper">
+              <span class="jobdates" format="%b %Y" id="963270798JSTD13">Jan 2009</span><span> - </span>
+              <span class="jobdates" format="%b %Y" id="963270798EDDT13">Sep 2010</span>
+            </span>
+          </span><br>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP13">Accenture Services Pvt. Ltd.</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT13">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA13">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES13"><div><strong>Project
+#10</strong></div><div><strong></strong> Title:
+Underwriting Decision Process (UDP)</div><div>Client:
+State Farm Insurance Company
+</div><div>Role:
+Test Engineer
+</div><div>Team
+Strength: 4
+</div><div>Methodology:
+AGILE
+</div><div>Tools
+used: RFT, Clear Quest, Lotus Notes, Requisite Pro
+</div><div> </div><div>
+
+<strong>Description</strong>:
+</div><div>
+Underwriting
+Decision Process (UDP) is the process which evaluates the risk of a
+policy depending on the coverage and coverage amount provided for
+specific coverage and helps the underwriter take an appropriate
+decision (accept/decline/modify).
+</div><div>
+UDP
+is needed to identify and calculate the claims from policy holders
+and is used to underwrite a policy in order to cover the risk in
+exchange for the premium paid by the policy holder.
+</div><div>
+An
+underwriter working for a property & casualty insurance company
+is concerned with the causes of loss to which property is exposed and
+the safeguards taken by the applicant. Therefore, underwriters serve
+as the main link between the Policy holder and the insurance agent.
+UDP is used to automate the policy decisions through RAS (Risk
+Analysis System). RAS is basically used to handle claim referrals and
+re-underwrite the Property and Casualty business.
+</div><div> </div><div>
+
+
+
+<em><strong>Roles
+& Responsibilities</strong></em>:
+</div><ul><li> Understand
+requirements, flow and functionality of the application.
+</li><li> Preparing
+test cases and test data.
+</li><li> Execution
+of test cases in different test environments.
+</li><li> Interaction
+with client team to resolve the functional, data and testing queries.
+</li><li> Smoke,
+Functional, Integration, Regression and System testing.
+</li><li> Automated
+the Regression suite using Rational
+Functional
+Tester
+</li><li>Gave
+Knowledge Transfer to the new team members.
+</li><li> Participating
+in Daily
+Stand
+up Meetings.
+</li><li> Clarifying
+doubts with Scrum
+Coach
+as & when needed.
+</li><li> Participating
+in Scrum
+Meetings.
+</li><li> Preparing
+Burn-Down
+charts for each sprint. </li><li>Involved
+in developing a full suite of test cases to test the product's
+stability.  Executed
+Test Cases and reported defects in terms of Major, Minor &
+Critical.  Reproducing
+all defects found and provide detail documentation (e.g. screen
+prints, step-by-step            reproduction instructions)
+</li><li>Tracking
+bugs and logging them in Clear Quest
+</li><li> Peer
+Reviewing the Test Scenarios & Test cases.
+</li><li> Establish
+onshore calls on weekly and daily basis to improve the quality of the
+project in various                     aspects.
+</li></ul><div><strong><em> </em></strong></div><div><strong><em>
+
+
+
+
+
+Testing
+- Planning and Execution:</em></strong>
+</div><ul><li> Plan
+and manage schedule and resources.
+</li><li> Prepare
+detailed test specification for modules and execute the test cases. Manage
+testing cycle using bug-tracking tool.</li><li>Publishing
+the testing progress to the project group and preparation of test
+summary reports.<br></li></ul></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270798_14_635874166" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline" style="display: inline;">
+            <span class="jobtitle" id="963270798JTIT14">Global Wealth Investment & Management ( GWIM )</span><span></span>
+            <span class="datesWrapper">
+              <span class="jobdates" format="%b %Y" id="963270798JSTD14">Sep 2007</span><span> - </span>
+              <span class="jobdates" format="%b %Y" id="963270798EDDT14">Dec 2008</span>
+            </span>
+          </span><br>
+          <span class="paddedline">
+            <span class="companyname" id="963270798COMP14">Accenture Services Pvt. Ltd.</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270798JCIT14">Bengaluru</span><span>, </span>
+              <span class="joblocation jobstate" id="963270798JSTA14">Karnataka</span><br>
+            </span>
+          </span>
+          <span class="jobline" id="963270798JDES14"><div><strong>Project
+#11 </strong></div><div><strong></strong>Title:
+Global Wealth Investment & Management ( GWIM )</div><div>
+Client:
+Bank of America
+</div><div>Role:
+Test Engineer
+</div><div>Team
+strength: 3
+</div><div>Methodology:
+V-Model
+</div><div>Tools
+used: Quality Centre, Visual Source Safe
+</div><div> </div><div>
+
+
+
+<strong>Description</strong>:</div><div>The
+project developed a sophisticated Web application for High Net-worth
+individuals globally.
+The
+main purpose of the Application is to manage the different classes of
+accounts & assets of individuals.
+Application
+was developed using ASP.NET & DB2 database.
+</div><div> </div><div>
+
+
+
+<em><strong>Roles
+& Responsibilities</strong></em>:
+</div><ul><li> Understand
+requirements, flow and functionality of the application.</li><li> Preparing
+test cases and test data.</li><li> Execution
+of test cases in different test environments.
+</li><li> Involved
+in peer reviews to analyse the test cases.
+</li><li> Interaction
+with client team to resolve the functional, data and testing queries.
+</li><li> Browser,
+Smoke, Functional, Integration, Regression and System testing.</li><li> Involved
+in functional study of application
+</li><li> Identify
+the possible positive and negative cases for the Test scenario
+created and making sure the Test Script is concise, understandable
+and executable.</li><li> Involved
+in developing a full suite of test cases to test the product's
+stability.  Loading
+the Test Cases in Quality Centre.</li><li> Executed
+Test Cases and reported defects in terms of Major, Minor &
+Critical. Reproducing
+all defects found and provide detail documentation (e.g. screen
+prints, step-by-step reproduction instructions)
+</li><li> Tracking
+bugs and logging them in Quality Centre.
+</li><li> Peer
+Reviewing the Test Scenarios
+</li><li> Establish
+onshore calls on weekly and daily basis to improve the quality of the
+project in various aspects.<br></li></ul></span>
+        </div>
+      </div>
+      </div>
+      <div id="SECTION_EDUC963270799" class="section">
+        <div class="heading">
+        <div id="SECTNAME_EDUC963270799" class="sectiontitle">Education</div>
+      </div>
+        <div id="PARAGRAPH_963270799_1_635874167" class="paragraph firstparagraph">
+        <div class="singlecolumn">
+          <span class="paddedline">
+            <span class="degree" id="963270799DGRE1">M.D.</span><span>: </span>
+            <span class="programline" id="963270799STUY1">Master Of Computer Applications </span><span></span>
+            <span class="datesWrapper">
+              <span class="jobdates" id="963270799GRYR1">2007</span>
+            </span><br>
+          </span>
+          <span class="paddedline">
+            <span class="companyname companyname_educ" id="963270799SCHO1">Vishweshwariah Technological University P.E.S.I.T</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270799SCIT1"></span>
+              <span class="joblocation jobstate" id="963270799SSTA1"></span>
+            </span><br>
+          </span>
+          
+          <span class="field" id="963270799FRFM1"></span>
+        </div>
+      </div>
+        <div id="PARAGRAPH_963270799_2_635874168" class="paragraph">
+        <div class="singlecolumn">
+          <span class="paddedline">
+            <span class="degree" id="963270799DGRE2">Bachelor of Engineering</span><span>: </span>
+            <span class="programline" id="963270799STUY2">Instrumentation Technology</span><span></span>
+            <span class="datesWrapper">
+              <span class="jobdates" id="963270799GRYR2">2003</span>
+            </span><br>
+          </span>
+          <span class="paddedline">
+            <span class="companyname companyname_educ" id="963270799SCHO2">Dayananda Sagar College of Engineering</span><span></span>
+            <span class="datesWrapper">
+              <span class="joblocation jobcity" id="963270799SCIT2">BANGALORE</span>
+              <span class="joblocation jobstate" id="963270799SSTA2"></span>
+            </span><br>
+          </span>
+          
+          <span class="field" id="963270799FRFM2">Instrumentation Technology</span>
+        </div>
+      </div>
+      </div>
+      <div id="SECTION_ADDI963270804" class="section">
+        <div class="heading">
+        <div id="SECTNAME_ADDI963270804" class="sectiontitle">Additional Information</div>
+      </div>
+        <div id="PARAGRAPH_963270804_1_635874173" class="paragraph firstparagraph">
+        <div class="field singlecolumn" id="963270804FRFM1"><p><strong><u>Personal Details:</u></strong>
+</p><ul><li>Name: Vijaykumar .H.K
+</li><li>Date of birth: 21-10-1980</li><li>
+Sex: Male</li><li>
+Marital status: Single
+</li><li>Passport no: K3245140
+</li></ul><p><strong>                                                       Declaration :</strong></p><p>I hereby declare that the facts furnished above are true to the best of my knowledge.</p></div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+1. Page Object Model
+2. Selenium , Java versions
+3. Java Programming Problems - Strings, Arrays, Collections
+4. Challenging Project
+5. Use of Constructors
+6. Starting activity of any Automation - Object Respository, Test Data, Keywords
+7. Group of Webelements - findElements(By.tagName("a"));
+8.DataProvider
